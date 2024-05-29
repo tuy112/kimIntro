@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+#wrap {
+  width: 100%;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+#header {
+  width: 98%;
+  height: 50px;
+}
+#header h1 {
+  font-size: 25px;
+  color: #222;
+  font-weight: 600;
+}
+#header h1 span {
+  color: #00ccff;
+  font-size: 15px;
+  margin-left: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* main common */
+.main {
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* main - i1 */
+.i1 {}
+.i1 .profile {
+  border: 1px solid #2699e6;
+  border-radius: 10px;
+  background-color: #2699e6;
+  width: 180px;
+  height: 220px;
+}
+.i1 .profile .profileWrite {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.i1 .profile .profileWrite .profileImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.i1 .profile .profileWrite .name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.i1 .profile .profileWrite .work {
+  font-size: 13px;
+  font-weight: 400;
+}
+.i1 .profile .quickRemote {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.i1 .profile .quickRemote li {
+  margin-left: 7px;
+}
+.i1 .profile .quickRemote li:first-child {
+  margin-left: 0;
+}
+.i1 .profile .quickRemote li a {
+  color: #fff;
+  font-size: 12px;
+  transition: 0.1s;
+}
+.i1 .profile .quickRemote li a:hover {
+  border-bottom: 1px solid #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.i1 .profileRemote {
+  border: 1px solid #def7ff;
+  border-radius: 10px;
+  background-color: #def7ff;
+  margin-top: 10px;
+  width: 180px;
+  height: 400px;
+}
+.i1 .profileRemote .sideTable {
+  width: 180px;
+  height: 400px;
+}
+.i1 .profileRemote .sideTable td {
+  text-align: center;
+  cursor: pointer;
+}
+.i1 .profileRemote .sideTable td a {
+  cursor: pointer;
+}
+
+/* main - i2 */
+.i2 {
+  margin-left: 10px;
+}
+.i2 .remoteTable {
+  border: 1px solid #2699e6;
+  border-radius: 80px;
+  width: 630px;
+  height: 630px;
+}
+.i2 .remoteTable td {
+  border: 1px solid #2699e6;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  width: 210px;
 }
